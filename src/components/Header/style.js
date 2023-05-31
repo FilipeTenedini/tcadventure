@@ -15,15 +15,17 @@ export const Headerr = styled.header`
     align-items: center;
     font-size: 36px;
     color: #FFF;
+
+    a {
+      text-decoration: none;
+      color: #FFF;
+    }
   }
 
   svg {
-    font-size: 46px;
+    font-size: 32px;
     margin: 0 20px;
     border-radius: 0 35px 30px 10px;
     cursor: pointer;
-  }
-  @media(max-width: 1124px) {
-
   }
 `;

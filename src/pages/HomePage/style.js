@@ -35,9 +35,9 @@ export const FormArea = styled.form`
 
     select {
       width: 100%;
-      height: 70px;
+      height: 40px;
       border-radius: 5px;
-      font-size: 26px;
+      font-size: 22px;
       outline: none;
       color: #e91e63;
       padding-left: 10px;
@@ -49,7 +49,7 @@ export const FormArea = styled.form`
       border: none;
       width: 130px;
       background-color: #e91e63;
-      font-size: 26px;
+      font-size: 22px;
       cursor: pointer;
       outline: none;
 
@@ -67,7 +67,7 @@ export const SloganArea = styled.div`
 
   span {
     max-width: 90%;
-    font-size: 60px;
+    font-size: 48px;
     color: #FFF;
     font-weight: 500;
     line-height: 90px;
