@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 import dayjs from 'dayjs';
 import axios from 'axios';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { BannerArea } from '../TicketsPage/style';
+import BannerArea from '../../components/BannerArea';
 import { Title } from '../TicketsPage/TicketBoard/style';
 import HeaderPic from '../../assets/3736390.webp';
 import { TicketInfoArea, Data } from './style';
@@ -13,6 +13,7 @@ export default function TicketItemPage() {
   const [ticket, setTicket] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const param = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     (async () => {
@@ -25,7 +26,11 @@ export default function TicketItemPage() {
       }
     })();
   }, []);
-  console.log(ticket);
+
+  function handleViewHotel() {
+    navigate(`/hotels/${ticket.arrival_city_id}`);
+  }
+
   return (
     <>
       <Header />
@@ -56,6 +61,7 @@ export default function TicketItemPage() {
             </>
           )}
         <h3>Faça um bom vôo!</h3>
+        <button type="button" onClick={handleViewHotel}> Ver hotéis </button>
       </TicketInfoArea>
       <Footer />
     </>

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import axios from 'axios';
-import { BannerArea } from './style';
+import BannerArea from '../../components/BannerArea';
 import HeaderPic from '../../assets/3736390.webp';
 import Header from '../../components/Header';
 import TicketBoard from './TicketBoard';
@@ -26,7 +26,6 @@ export default function TicketsPage() {
 
   function handleSelectTicket(id) {
     ticketRef.current = id;
-    console.log(ticketRef.current);
     navigate(`/tickets/item/${ticketRef.current}`);
   }
 
