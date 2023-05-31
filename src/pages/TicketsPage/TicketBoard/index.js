@@ -18,8 +18,8 @@ export default function TicketBoard({ list, handleSelectTicket }) {
               <span>{i.company_name}</span>
               <span>{i.departure_city_name}</span>
               <span>{i.arrival_city_name}</span>
-              <span>{dayjs(i.departure_time).format('DD/MM/YYYY')}</span>
-              <span>{dayjs(i.arrival_time).format('DD/MM/YYYY')}</span>
+              <span>{dayjs(i.departure_time).format('DD/MM/YYYY - hh:mm')}</span>
+              <span>{dayjs(i.arrival_time).format('DD/MM/YYYY - hh:mm')}</span>
             </div>
           ))
           : <h2> Carregando voos... </h2>}

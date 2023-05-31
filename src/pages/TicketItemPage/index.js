@@ -55,8 +55,8 @@ export default function TicketItemPage() {
                 <span>{ticket.company}</span>
                 <span>{ticket.departure_city}</span>
                 <span>{ticket.arrival_city}</span>
-                <span>{dayjs(ticket.departure_time).format('DD/MM/YYYY')}</span>
-                <span>{dayjs(ticket.arrival_time).format('DD/MM/YYYY')}</span>
+                <span>{dayjs(ticket.departure_time).format('DD/MM/YYYY - hh:mm')}</span>
+                <span>{dayjs(ticket.arrival_time).format('DD/MM/YYYY - hh:mm')}</span>
               </Data>
             </>
           )}
