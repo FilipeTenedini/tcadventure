@@ -18,7 +18,7 @@ export const Container = styled.div`
       background: #f1f1f1;
     }
     &::-webkit-scrollbar-thumb {
-      background:  #e91e63;
+      background:  #5a50eb;
     }
 
   div{
@@ -37,7 +37,7 @@ export const Container = styled.div`
       display: flex;
       justify-content: center;
       flex: 1;
-      color: #e91e63;
+      color: #5a50eb;
       font-weight: bold;
       font-size: 14px;
     }
@@ -56,7 +56,7 @@ export const Title = styled.div`
       display: flex;
       justify-content: center;
       flex: 1;
-      color: #e91e63;
+      color: #5a50eb;
       font-weight: bold;
       font-size: 18px;
     }

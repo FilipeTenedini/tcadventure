@@ -21,7 +21,7 @@ export default function Footer() {
         <BiPhoneCall />
       </ContentContainer>
       <ContentContainer
-        title="Convênio com locadoras de veículos."
+        title="Locadoras"
         text="Precisa de um carro na cidade desejada? Nos contate!"
       >
         <BsCarFront />

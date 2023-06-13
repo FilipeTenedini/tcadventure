@@ -12,6 +12,7 @@ export const LogoInfo = styled.div`
   position: absolute;
   right: 0;
   bottom: 5px;
+
   a{
     text-decoration: none;
     display: flex;
@@ -24,7 +25,7 @@ export const LogoInfo = styled.div`
 
     span{
       margin: 5px;
-      color: #e91e63;
+      color: #5a50eb;
       text-decoration: none;
     }
   }

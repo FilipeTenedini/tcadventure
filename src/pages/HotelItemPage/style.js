@@ -43,7 +43,7 @@ export const MessageArea = styled.div`
       border-radius: 5px;
       border: none;
       width: 130px;
-      background-color: #e91e63;
+      background-color: #5a50eb;
       font-size: 22px;
       cursor: pointer;
       outline: none;
