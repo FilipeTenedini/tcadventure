@@ -63,7 +63,7 @@ export default function TicketItemPage() {
         <h3>Faça um bom vôo!</h3>
         <button type="button" onClick={handleViewHotel}> Ver hotéis </button>
       </TicketInfoArea>
-      <Footer />
+      {!isLoading && <Footer />}
     </>
   );
 }

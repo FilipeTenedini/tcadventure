@@ -50,7 +50,7 @@ export default function HotelItemPage() {
               </MessageArea>
             </>
           )}
-      <Footer />
+      {!isLoading && <Footer />}
     </>
   );
 }

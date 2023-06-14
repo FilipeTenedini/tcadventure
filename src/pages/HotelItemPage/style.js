@@ -5,9 +5,10 @@ export const LoadingArea = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  h2{
-    position: absolute;
-  }
+
+    h2 {
+      position: absolute;
+    }
 `;
 
 export const PicturesArea = styled.div`
@@ -16,20 +17,29 @@ export const PicturesArea = styled.div`
   justify-content: center;
   align-items: center;
 
-  div {
-    margin-top: 50px;
-    width: 300px;
-    height: 300px;
-    flex: 1;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    div {
+      margin-top: 50px;
+      width: 300px;
+      height: 300px;
+      flex: 1;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+  @media (max-width: 769px) {
+    flex-direction: column;
+
+      div {
+        width: 100%;
+      }
+
   }
-  img {
-    width: 100%;
-    height: 100%;
-}
 `;
 
 export const MessageArea = styled.div`
@@ -38,7 +48,7 @@ export const MessageArea = styled.div`
   flex-direction: column;
   align-items: center;
 
-    button{
+    button {
       color: #fff;
       border-radius: 5px;
       border: none;
@@ -54,8 +64,17 @@ export const MessageArea = styled.div`
         }
     }
 
-    h3{
+    h3 {
       margin-top: 75px;
       font-size: 40px;
     }
+
+    @media (max-width: 769px) {
+    flex-direction: column;
+
+      h3 {
+        text-align: center;
+      }
+
+  }
 `;
