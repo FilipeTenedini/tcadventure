@@ -10,7 +10,7 @@ export const TicketInfoArea = styled.div`
   max-width: 900px;
   height: 360px;
 
-    button{
+  button{
       color: #fff;
       border-radius: 5px;
       border: none;
@@ -29,6 +29,7 @@ export const TicketInfoArea = styled.div`
     h3{
       margin-top: 75px;
       font-size: 40px;
+
     }
 `;
 
@@ -43,5 +44,10 @@ export const Data = styled.div`
       justify-content: center;
       flex: 1;
       font-size: 18px;
+    }
+
+    @media (max-width: 610px) {
+      margin-top: 20px;
+      flex-direction: column;
     }
 `;

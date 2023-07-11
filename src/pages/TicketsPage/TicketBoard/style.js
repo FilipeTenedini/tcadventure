@@ -40,6 +40,15 @@ export const Container = styled.div`
       color: #5a50eb;
       font-weight: bold;
       font-size: 14px;
+
+      @media (max-width: 580px) {
+        margin: 10px 0;
+      }
+    }
+
+    @media (max-width: 580px) {
+      flex-direction: column;
+      margin: 10px 0;
     }
   }
 `;
@@ -60,4 +69,8 @@ export const Title = styled.div`
       font-weight: bold;
       font-size: 18px;
     }
+
+  @media (max-width: 610px) {
+    display: none;
+  }
 `;

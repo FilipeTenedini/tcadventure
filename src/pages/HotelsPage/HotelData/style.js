@@ -57,7 +57,6 @@ export const AmenitiesArea = styled.div`
     @media (max-width: 769px) {
       flex-direction: row;
       flex-wrap: wrap;
-
       span {
         margin: 10px;
       }

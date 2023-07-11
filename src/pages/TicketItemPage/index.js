@@ -14,7 +14,6 @@ export default function TicketItemPage() {
   const [isLoading, setIsLoading] = useState(true);
   const param = useParams();
   const navigate = useNavigate();
-
   useEffect(() => {
     (async () => {
       try {
